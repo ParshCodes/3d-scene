@@ -1,4 +1,5 @@
 build/
+vcpkg/
 vcpkg_installed/
 
 # VS / MSVC
