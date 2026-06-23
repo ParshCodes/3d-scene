@@ -1,0 +1,66 @@
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+The following packages will be built and installed:
+  * egl-registry:x64-windows@2025-05-27
+    glad[core,loader]:x64-windows@0.1.36
+    glfw3:x64-windows@3.4#1
+    glm:x64-windows@1.0.3
+  * opengl-registry:x64-windows@2026-01-26
+  * vcpkg-cmake:x64-windows@2024-04-23
+  * vcpkg-cmake-config:x64-windows@2024-05-23
+Additional packages (*) will be modified to complete this operation.
+Restored 7 package(s) from C:\Users\ppagaria2278\AppData\Local\vcpkg\archives in 2.5 s. Use --debug to see more details.
+Installing 1/7 vcpkg-cmake-config:x64-windows@2024-05-23...
+vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 98afe6c8a165d2bcaa637117fa765403e148e9bd9f8ce8bbc249dc25b2fbc060
+Elapsed time to handle vcpkg-cmake-config:x64-windows: 86.9 ms
+Installing 2/7 vcpkg-cmake:x64-windows@2024-04-23...
+vcpkg-cmake:x64-windows@2024-04-23 package ABI: ea0531ad9329041f6fa59d287fab396c3970c97d85910a89c61fa3676d6050b9
+Elapsed time to handle vcpkg-cmake:x64-windows: 120 ms
+Installing 3/7 egl-registry:x64-windows@2025-05-27...
+egl-registry:x64-windows@2025-05-27 package ABI: ef999d57fbb60620a540038c71c30eab07e0f14626338ad11d7599278f6fb0c2
+Elapsed time to handle egl-registry:x64-windows: 57.1 ms
+Installing 4/7 opengl-registry:x64-windows@2026-01-26...
+opengl-registry:x64-windows@2026-01-26 package ABI: 8c7247147e05349bbcf9e203d55b09613b347b25e21018966f64d0b2d7b9ff3e
+Elapsed time to handle opengl-registry:x64-windows: 94.1 ms
+Installing 5/7 glad[core,loader]:x64-windows@0.1.36...
+glad[core,loader]:x64-windows@0.1.36 package ABI: 59ffd72ea54f4b59a4c4bd9945feb026e06e44282193627461a6a626db4eda25
+Elapsed time to handle glad:x64-windows: 175 ms
+Installing 6/7 glfw3:x64-windows@3.4#1...
+glfw3:x64-windows@3.4#1 package ABI: f04e3296fd445aa4a4056f273a1160799ac3ec86d692b4930eb114d95b3bf906
+Elapsed time to handle glfw3:x64-windows: 108 ms
+Installing 7/7 glm:x64-windows@1.0.3...
+glm:x64-windows@1.0.3 package ABI: f611dc2cc064cf6f39769b5fb576ec8105e5ee72d6e9d4cbd39f4ac362df9b74
+Elapsed time to handle glm:x64-windows: 1.5 s
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Some packages did not declare an SPDX license. Check the `copyright` file for each package for more information about their licensing.
+Packages installed in this vcpkg installation declare the following licenses:
+Apache-2.0
+MIT
+Zlib
+glad provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glad CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glad::glad)
+
+glfw3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glfw3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glfw)
+
+glfw3 provides pkg-config modules:
+
+  # A multi-platform library for OpenGL, window and input
+  glfw3
+
+The package glm provides CMake targets:
+
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm)
+
+    # Or use the header-only version
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm-header-only)
+
+All requested installations completed successfully in: 2.1 s
