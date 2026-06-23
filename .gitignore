@@ -1,0 +1,15 @@
+build/
+vcpkg_installed/
+
+# VS / MSVC
+*.user
+*.suo
+.vs/
+
+# compiled output
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
